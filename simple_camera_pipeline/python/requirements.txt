@@ -1,0 +1,10 @@
+colour-demosaicing==0.2.2
+colour-science==0.4.1
+ExifRead==3.0.0
+imageio==2.23.0
+numpy==1.24.0
+opencv-python==4.6.0.66
+Pillow==9.3.0
+pluggy==1.0.0
+rawpy==0.17.3
+scipy==1.9.3
