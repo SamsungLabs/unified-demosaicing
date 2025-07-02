@@ -1,4 +1,4 @@
-# Unified Demosaicing and Denoising for Bayer Patterns
+# Examining Joint Demosaicing and Denoising for Single-, Quad-, and Nona-Bayer Patterns
 
 **SaiKiran Tedla, Abhijith Punnappurath, Luxi Zhao, Michael S. Brown**  
 Samsung AI Center Toronto & York University
