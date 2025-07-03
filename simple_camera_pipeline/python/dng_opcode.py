@@ -1,9 +1,3 @@
-"""
-Authors(s):
-Abdelrahman Abdelhamed (a.abdelhamed@samsung.com)
-
-Utility functions for handling DNG opcode lists.
-"""
 import struct
 import numpy as np
 from .exif_utils import get_tag_values_from_ifds

@@ -1,5 +1,3 @@
-#impleemntation from https://github.com/xingwz/End-to-End-JDNDMSR/blob/main/network/model.py
-
 import torch.nn as nn
 from .rcan import RCAN
 
