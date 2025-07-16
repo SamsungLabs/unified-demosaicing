@@ -75,6 +75,6 @@ python PyTorch/runner.py --config PyTorch/configs/unified_test.yaml
 Again, be sure to:
 
 - Set the appropriate ISO levels  
-- Provide the correct paths to the test dataset  
-- Provide the path to the checkpoint file
+- Provide the correct paths to the test dataset 
+- Provide the path to the appropriate checkpoint file (see [models](PyTorch/models))
 ---
