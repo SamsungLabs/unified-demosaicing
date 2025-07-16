@@ -1,5 +1,5 @@
+/*.pth
 *.npy
-*.pth
 .DS_Store
 .huskyrc.json
 rebuatall_deltaes
@@ -36,8 +36,10 @@ patches_small_scale
 hard_patches_remove_bad
 tmp
 wandb
+Scenes_npy_removed_bad_uint16.zip
 Scenes/
-models
+/models
+/hpc_models
 log.log
 **/node_modules
 *.pyc

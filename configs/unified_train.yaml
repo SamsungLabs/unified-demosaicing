@@ -32,7 +32,7 @@ test: false
 hard_patches: true
 backbone_iso: 100
 job_id: null
-iso: 3200
+iso: 800
 depth: 4
 plot_images: false
 pass_pattern: false

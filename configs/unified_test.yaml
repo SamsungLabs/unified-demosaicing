@@ -3,7 +3,7 @@ wandb_entity: "tedlasai"
 patchdir: "/local/ssd/tedlasai/patches_48_uint16/"
 fulldir: "/home/tedlasai/demosaic/Scenes_npy_removed_bad_uint16/"
 odir: "/home/tedlasai/demosaic_network_outputs"
-load: "models/simp_multi_single_quad_nona_convnet_rm-False_iso3200_bi_100_d0.0_7-1-21-51-50/best.pth"
+load: "PyTorch/models/iso3200.pth"
 test: true
 model: "simp_multi"
 num_gpus: 1
