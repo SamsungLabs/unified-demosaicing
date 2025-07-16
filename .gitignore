@@ -1,4 +1,3 @@
-/*.pth
 *.npy
 .DS_Store
 .huskyrc.json
@@ -7,10 +6,12 @@ out
 best*
 jobs
 Oct24_final_run_data
-iso3200*
-iso800*
-iso1600*
-iso400*
+/iso3200*
+/iso800*
+/iso1600*
+/iso400*
+/models
+/home
 network_outputs*
 full_images
 best_patches_viz
@@ -38,7 +39,6 @@ tmp
 wandb
 Scenes_npy_removed_bad_uint16.zip
 Scenes/
-/models
 /hpc_models
 log.log
 **/node_modules
