@@ -35,6 +35,7 @@ This section describes how to train and test our unified demosaicing and denoisi
 conda env create -f environment.yml
 conda activate examine_demosaic
 ```
+Please copy the DNG provided in the dataset link (into [PyTorch/utilities](PyTorch/utilities)). This DNG is primarily used for visualization and also computing the DeltaE metric. 
 
 You'll also need a [Weights & Biases (wandb)](https://wandb.ai/) account for experiment tracking. Update the `wandb` settings in the YAML files accordingly.
 
