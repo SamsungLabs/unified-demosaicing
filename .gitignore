@@ -87,5 +87,3 @@ package.nls.*.json
 l10n/
 beyond_rgb_process
 DSC01201_PSMS.dng
-PyTorch/arch/rcan.py
-PyTorch/arch/common.py
