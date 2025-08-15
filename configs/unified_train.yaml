@@ -37,7 +37,7 @@ depth: 4
 plot_images: false
 pass_pattern: false
 noisy_viz: false
-dropout: 0.0
+dropout: 0.05
 gauss_sigma: 0.4
 range_sigma: 0.0
 weight_scale: 0.1
