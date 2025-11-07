@@ -34,7 +34,7 @@ backbone_iso: 100
 job_id: null
 iso: 3200
 depth: 4
-plot_images: false
+plot_images: True
 pass_pattern: false
 noisy_viz: false
 dropout: 0.0

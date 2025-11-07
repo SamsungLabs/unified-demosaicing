@@ -54,7 +54,7 @@ Download the dataset and then update config files accordingly with the appropria
 To train the model, run:
 
 ```bash
-python PyTorch/runner.py --config PyTorch/configs/unified_train.yaml
+python PyTorch/runner.py --config configs/unified_train.yaml
 ```
 
 Modify the config file to:
@@ -70,7 +70,7 @@ Modify the config file to:
 To test the model, run:
 
 ```bash
-python PyTorch/runner.py --config PyTorch/configs/unified_test.yaml
+python PyTorch/runner.py --config configs/unified_test.yaml
 ```
 
 Again, be sure to:

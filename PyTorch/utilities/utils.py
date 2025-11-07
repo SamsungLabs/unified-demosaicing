@@ -14,6 +14,12 @@ import wandb
 from arch import simple_multi_head_jd_model
 import yaml
 from types import SimpleNamespace
+from simple_camera_pipeline.python.pipeline import run_pipeline_v2, get_metadata
+import cv2
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+dng_path = os.path.join(current_dir, "DSC01201_PSMS.dng")
+metadata = get_metadata(dng_path)
 
 def export_image(filename, img):
     np.save(filename, img)
@@ -194,6 +200,15 @@ def generate_output_images(out_imgs_dir, imgs, psnrs, filenames):
         image = image/13496 #renormalize
         image = np.clip(image, 0, 1)
         patch_gamma = np.moveaxis(image, [0,1,2], [2,0,1]) #no gamma
+
+
+        params = {"input_stage": "demosaic", "output_stage": "tone"}
+        viz_img = run_pipeline_v2(image.transpose(1, 2, 0), params, metadata)
+        #clip 
+        viz_img = np.clip(viz_img, 0, 1)
+        viz_img = (viz_img *255).astype(np.uint8)
+
+        
         if image.shape[1] == 44:
             parts = filename.split('_')
             psnr_round = format(psnrs[i], '.2f')
@@ -213,6 +228,11 @@ def generate_output_images(out_imgs_dir, imgs, psnrs, filenames):
 
         os.makedirs(os.path.dirname(full_path), exist_ok=True)
         np.save(full_path, patch_gamma[:,:,::-1])  #flip channel order
+
+        #write viz_image
+        viz_full_path = full_path[:-4]+"_viz.png"
+        cv2.imwrite(viz_full_path, cv2.cvtColor(viz_img, cv2.COLOR_RGB2BGR))
+        
     return out
 
 def set_job_id(args):
