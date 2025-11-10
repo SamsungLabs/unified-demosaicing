@@ -78,4 +78,5 @@ Again, be sure to:
 - Set the appropriate ISO levels  
 - Provide the correct paths to the test dataset 
 - Provide the path to the appropriate checkpoint file (see [models](PyTorch/models))
+- Please set plot_images:True in the config file if you want to get npy and png outputs.
 ---
